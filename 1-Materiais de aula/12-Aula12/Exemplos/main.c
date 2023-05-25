@@ -7,6 +7,7 @@
 int main() {
 	system("cls");
 	setlocale(LC_ALL,"");
+	/*
 	int i, conta=0, contr=0;
 	float n1, n2, med;
 	for(i=0;i<5;i++){
@@ -27,5 +28,10 @@ int main() {
 }
 	printf("\n \nO total de alunos APROVADOS foi: %d alunos",conta);
 	printf("\nO toal de alunos REPROVADOS foi: %d alunos",contr);
+	*/
+	int i;
+	for(i=10; i>=1; i--){
+		printf("\n %d",i);
+	}
 	return 0;
 }

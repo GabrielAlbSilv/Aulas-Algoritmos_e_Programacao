@@ -23,7 +23,6 @@ int main() {
 }
 	printf("\n %d usuários são maiores que 1,60",cont);
 	*/
-	
 	int i, cont=0;
 	for(i=65; i>=50; i--){
 		cont++;
@@ -31,6 +30,6 @@ int main() {
 		printf("\nTemperatura em Fahrenheit: %d", i);
 		printf("\nTemperatura em Celsius: %.2f \n\n", 0.56*(i-32));
 	}
-	
+
 	return 0;
 }
