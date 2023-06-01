@@ -38,14 +38,16 @@ int main() {
 	while(i<4){
 		printf("\nPor favor, insira sua idade: ");
 		scanf("%d",&idad);
-		acum += idad;
 		if(idad > 18){
+			acum += idad;
 			cont++;
 		}
 		i++;
 	}
-	printf("\nSoma de todas as idades: %.0f", acum);
-	printf("\nMédia das idades: %.2f", acum/i);
 	printf("\nMaiores de idade: %d", cont);
+	printf("\nMédia dos maiores de idade: %.2f", acum/cont);
+	printf("\nSoma dos maiores de idade: %.0f", acum);
+	
+
 	return 0;
 }
