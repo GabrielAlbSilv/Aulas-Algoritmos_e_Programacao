@@ -19,7 +19,7 @@ int main() {
 	printf("\nSoma dos valores menores que 50: %.2f", acum2);
 	printf("\nMédia de todos os valores: %.2f", acum/i);
 	*/
-	int i=0;
+	/*int i=0;
 	float val, acum=0, acum2=0; 
 	while (i<3){
 		printf("\nPor favor, insira um valor: ");
@@ -31,6 +31,21 @@ int main() {
 		i++;
 	}
 	printf("\nSoma dos valores menores que 50: %.2f", acum2);
-	printf("\nMédia de todos os valores: %.2f", acum/i);
+	printf("\nMédia de todos os valores: %.2f", acum/i);*/
+	
+	int idad, i=0, cont=0;
+	float acum=0;
+	while(i<4){
+		printf("\nPor favor, insira sua idade: ");
+		scanf("%d",&idad);
+		acum += idad;
+		if(idad > 18){
+			cont++;
+		}
+		i++;
+	}
+	printf("\nSoma de todas as idades: %.0f", acum);
+	printf("\nMédia das idades: %.2f", acum/i);
+	printf("\nMaiores de idade: %d", cont);
 	return 0;
 }
