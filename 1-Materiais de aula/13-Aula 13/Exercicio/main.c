@@ -7,12 +7,17 @@ int main() {
 	system("cls");
 	setlocale(LC_ALL,"");
 	int i=0;
-	float alt, acum=0; //sempre iniciar a variável acumladora 
-	for (i=0; i<30;i++){
-		printf("\nPor favor, insira a sua altura: ");
-		scanf("%f",&alt);
-		acum = acum + alt; //acumalador somando todos os valores inseridos
+	float val, acum=0, acum2=0; //sempre iniciar a variável acumladora 
+	for (i=0; i<5;i++){
+		printf("\nPor favor, insira um valor: ");
+		scanf("%f",&val);
+		acum = acum + val;
+		if (val < 50){
+			acum2 = acum2 + val;
+		}
+		 //acumalador somando todos os valores inseridos
 	}
-	printf("\nA média de altura é: %.2f", acum/i);
+	printf("\nSoma dos valores menores que 50: %.2f", acum2);
+	printf("\nMédia de todos os valores: %.2f", acum/i);
 	return 0;
 }
